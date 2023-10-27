@@ -71,7 +71,12 @@
     <script>
         const passwordGeneratorButton = document.getElementById('passwordGenerator');
         const nicknameGeneratorButton = document.getElementById('nicknameGenerator');
+        const Save = document.getElementById('nicknameGenerator');
 
+        Save.addEventListener('click', function() {
+            window.location.href = 'https://salvarsenhasenickanames.vercel.app/';
+        });
+        
         passwordGeneratorButton.addEventListener('click', function() {
             window.location.href = 'https://gerador-de-senhas-khaki.vercel.app/';
         });
