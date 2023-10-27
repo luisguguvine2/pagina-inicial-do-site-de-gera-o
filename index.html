@@ -65,13 +65,14 @@
         <div class="button-container">
             <button class="button" id="passwordGenerator">Gerador de Senhas</button><br><br>
             <button class="button" id="nicknameGenerator">Gerador de Nicknames</button><br><br>
+            <button class="button" id="Salve">Salve suas senhas e nicknames</button><br><br>
         </div>
     </div>
 
     <script>
         const passwordGeneratorButton = document.getElementById('passwordGenerator');
         const nicknameGeneratorButton = document.getElementById('nicknameGenerator');
-        const Save = document.getElementById('nicknameGenerator');
+        const Save = document.getElementById('Salve');
 
         Save.addEventListener('click', function() {
             window.location.href = 'https://salvarsenhasenickanames.vercel.app/';
