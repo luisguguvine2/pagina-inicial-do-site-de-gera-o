@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gerador de Nomes de Avatar</title>
+    <title>Gerador de Senhas e Nicknames</title>
     <style>
         body {
             background-color: #007BFF;
-            color: #000;
+            color: #fff;
             text-align: center;
             margin: 0;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-title {
+            font-size: 48px;
+            font-weight: bold;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            width: 100%;
+            padding: 20px;
         }
 
         .container {
@@ -22,10 +39,8 @@
             width: 100%;
             max-width: 400px;
             text-align: center;
-        }
-
-        h1 {
-            color: #000;
+            z-index: 1;
+            position: relative;
         }
 
         .button-container {
@@ -45,11 +60,11 @@
     </style>
 </head>
 <body>
+    <div class="background-title">Gerador de Senhas e Nicknames</div>
     <div class="container">
-        <h1>Escolha uma opção:</h1>
         <div class="button-container">
             <button class="button" id="passwordGenerator">Gerador de Senhas</button><br><br>
-            <button class="button" id="nicknameGenerator">Gerador de Nickname</button><br><br>
+            <button class="button" id="nicknameGenerator">Gerador de Nicknames</button><br><br>
         </div>
     </div>
 
